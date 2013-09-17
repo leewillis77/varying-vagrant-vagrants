@@ -93,6 +93,11 @@ apt_package_check_list=(
 	g++
 	nodejs
 
+	# Drupal stuff
+	drush
+	drush-make
+
+
 )
 
 echo "Check for apt packages to install..."
