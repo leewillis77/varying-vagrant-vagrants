@@ -452,6 +452,12 @@ PHP
 		grunt
 	fi
 
+	# Make vhost directory for Drupal site. No actual content yet.
+	if [ ! -d /srv/www/drupal ]
+	then
+		mkdir /srv/www/drupal
+	fi
+	
 	# Download phpMyAdmin 4.0.5
 	if [ ! -d /srv/www/default/database-admin ]
 	then
