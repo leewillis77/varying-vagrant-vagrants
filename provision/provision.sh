@@ -260,6 +260,7 @@ echo -e "\nSetup configuration file links..."
 
 ln -sf /srv/config/nginx-config/nginx.conf /etc/nginx/nginx.conf | echo " * /srv/config/nginx-config/nginx.conf -> /etc/nginx/nginx.conf"
 ln -sf /srv/config/nginx-config/nginx-wp-common.conf /etc/nginx/nginx-wp-common.conf | echo " * /srv/config/nginx-config/nginx-wp-common.conf -> /etc/nginx/nginx-wp-common.conf"
+ln -sf /srv/config/nginx-config/nginx-drupal-common.conf /etc/nginx/nginx-drupal-common.conf | echo " * /srv/config/nginx-config/nginx-drupal-common.conf -> /etc/nginx/nginx-drupal-common.conf"
 
 # Configuration for php5-fpm
 ln -sf /srv/config/php5-fpm-config/www.conf /etc/php5/fpm/pool.d/www.conf | echo " * /srv/config/php5-fpm-config/www.conf -> /etc/php5/fpm/pool.d/www.conf"
@@ -467,7 +468,8 @@ fi
 DOMAINS='local.wordpress.dev 
          local.wordpress-trunk.dev
          src.wordpress-develop.dev
-         build.wordpress-develop.dev'
+         build.wordpress-develop.dev
+         local.drupal.dev'
 
 if ! grep -q "$DOMAINS" /etc/hosts
 then

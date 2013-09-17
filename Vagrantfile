@@ -41,7 +41,8 @@ Vagrant.configure("2") do |config|
       "local.wordpress.dev",
       "local.wordpress-trunk.dev",
       "src.wordpress-develop.dev",
-      "build.wordpress-develop.dev"
+      "build.wordpress-develop.dev",
+      "local.drupal.dev"
     ]
   end
 
