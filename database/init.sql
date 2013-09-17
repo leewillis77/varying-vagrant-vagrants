@@ -9,6 +9,9 @@ CREATE DATABASE IF NOT EXISTS `wordpress_develop`;
 GRANT ALL PRIVILEGES ON `wordpress_develop`.* TO 'wp'@'localhost' IDENTIFIED BY 'wp';
 CREATE DATABASE IF NOT EXISTS `wordpress_unit_tests`;
 GRANT ALL PRIVILEGES ON `wordpress_unit_tests`.* TO 'wp'@'localhost' IDENTIFIED BY 'wp';
+CREATE DATABASE IF NOT EXISTS `drupal`;
+GRANT ALL PRIVILEGES ON `drupal`.* TO 'drupal'@'localhost' IDENTIFIED BY 'drupal';
+
 
 # Create an external user with privileges on all databases in mysql so
 # that a connection can be made from the local machine without an SSH tunnel
